@@ -1,3 +1,4 @@
+---
 - name: My First Project With Ansible
   hosts: localhost
   vars: 
@@ -17,10 +18,12 @@
       ansible.builtin.debug:
         msg: "My name is: {{ myname[0] }}"
 
-    - name: Copy Bash File To Hosts
-      ansible.builtin.copy:
-        src: /src-path/bash.sh
-        dest: /dest-path
-
     - name: Execute Bash Script File
       ansible.builtin.shell: /path/bash.sh
+        cmd: ./ansible.sh
+
+
+
+
+
+      
