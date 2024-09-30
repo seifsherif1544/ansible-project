@@ -34,8 +34,3 @@ echo "----------------------------- Create Container from image ----------------
 
 docker run --name my-ansible-website -d -p 5000:80 ansible-website
 
-echo "---------------------------------- Showing Web-Site -----------------------------------"
-
-sleep 20s
-
-curl localhost:5000
